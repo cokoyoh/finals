@@ -7,7 +7,8 @@ $firstname_err = $lastname_err = $email_err = $password_err = $confirm_password_
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // check if empty
-   if (isset($_POST['create_new'])) { // creating new
+   //The $_POST does not have the value for $_POST['create_new'] at any given time. So the whole of the code in the if condition will not be executed at all.
+    if (isset($_POST['create_new'])) { // creating new 
         if (
             empty(trim($_POST["firstname"])) &&
             empty(trim($_POST["lastname"])) &&
