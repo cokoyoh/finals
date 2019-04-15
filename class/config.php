@@ -8,7 +8,7 @@ $password = 'secret';
 $database = 'library';
 $port = '3306';
 
-$con = mysqli_connect("127.0.0.1", "homestead", "secret", "library", "3306");
+$con = mysqli_connect("127.0.0.1", "homestead", "secret", "library", "3306"); //What is the use of defining the variables if you are not using them?
 
 // Check connection
 if (mysqli_connect_errno()) {
